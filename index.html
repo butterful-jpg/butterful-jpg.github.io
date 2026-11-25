@@ -128,6 +128,14 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
+      <div class="site-state-item site-state-tags">
+        <span class="site-state-item-count">3</span>
+        <span class="site-state-item-name">tags</span>
+      </div>
   </nav>
 </div>
 
@@ -169,7 +177,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2026/11/26/firstBlog/" class="post-title-link" itemprop="url">firstBlog</a>
+          <a href="/2026/11/26/firstBlog/" class="post-title-link" itemprop="url">我的第一篇博客</a>
         </h2>
 
         <div class="post-meta-container">
@@ -179,8 +187,18 @@
         <i class="far fa-calendar"></i>
       </span>
       <span class="post-meta-item-text">Posted on</span>
+      
 
-      <time title="Created: 2026-11-26 00:30:21" itemprop="dateCreated datePublished" datetime="2026-11-26T00:30:21+08:00">2026-11-26</time>
+      <time title="Created: 2026-11-26 00:30:21 / Modified: 00:52:49" itemprop="dateCreated datePublished" datetime="2026-11-26T00:30:21+08:00">2026-11-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
     </span>
 
   
@@ -193,7 +211,63 @@
     
     
     <div class="post-body" itemprop="articleBody">
-          
+          <p>今天搭好了自己的第一个博客，记录一下过程和踩到的坑，方便以后回看。</p>
+<h2 id="用了什么"><a href="#用了什么" class="headerlink" title="用了什么"></a>用了什么</h2><ul>
+<li>框架：Hexo</li>
+<li>主题：NexT</li>
+<li>托管：GitHub Pages</li>
+<li>编辑器：VS Code</li>
+</ul>
+<h2 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h2><ol>
+<li>安装 Node.js，自带 npm</li>
+<li>全局安装 Hexo：<code>npm install -g hexo-cli</code></li>
+<li>初始化博客目录：<code>hexo init</code></li>
+<li>安装依赖：<code>npm install</code></li>
+<li>克隆 NexT 主题到 <code>themes/next</code></li>
+<li>修改根目录 <code>_config.yml</code> 里的 <code>theme: next</code></li>
+<li>配置 GitHub Pages 仓库和部署参数</li>
+<li><code>hexo clean &amp;&amp; hexo g &amp;&amp; hexo d</code> 部署上线</li>
+</ol>
+<h2 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h2><table>
+<thead>
+<tr>
+<th>命令</th>
+<th>作用</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><code>hexo new &quot;标题&quot;</code></td>
+<td>新建文章</td>
+</tr>
+<tr>
+<td><code>hexo server</code></td>
+<td>本地预览</td>
+</tr>
+<tr>
+<td><code>hexo clean</code></td>
+<td>清除缓存</td>
+</tr>
+<tr>
+<td><code>hexo g</code></td>
+<td>生成静态页面</td>
+</tr>
+<tr>
+<td><code>hexo d</code></td>
+<td>部署到线上</td>
+</tr>
+</tbody></table>
+<h2 id="遇到的问题"><a href="#遇到的问题" class="headerlink" title="遇到的问题"></a>遇到的问题</h2><ul>
+<li><strong>Front-matter 缺 <code>---</code></strong>：文章开头必须有三个短横线包裹元信息，否则标题和日期识别不到。</li>
+<li><strong>分支名对不上</strong>：本地是 master，GitHub 远程是 main，部署时要对应上。</li>
+<li><strong>主题渲染器缺失</strong>：换 NexT 后需要补装渲染器 <code>npm install hexo-renderer-pug hexo-renderer-stylus --save</code>。</li>
+</ul>
+<h2 id="下一步"><a href="#下一步" class="headerlink" title="下一步"></a>下一步</h2><p>准备多写几篇文章，慢慢熟悉 Markdown 语法，再把源文件备份到私有仓库，防止丢失。</p>
+<blockquote>
+<p>千里之行，始于足下。第一篇，记录开始。</p>
+</blockquote>
+<hr>
+<p>内容由 AI 生成</p>
+
       
     </div>
 
