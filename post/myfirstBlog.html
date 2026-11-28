@@ -20,24 +20,28 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Mist","darkmode":true,"version":"8.29.1","exturl":false,"sidebar":{"position":"left","width_expanded":320,"width_dual_column":240,"display":"post","padding":18,"offset":12},"hljswrap":true,"codeblock":{"theme":{"light":"github","dark":"stackoverflow-dark"},"prism":{"light":"prism","dark":"prism-dark"},"copy_button":{"enable":true,"style":"mac"},"fold":{"enable":false,"height":500},"language":true},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"duration":200,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"}}</script><script src="/js/config.js" defer></script>
 
-    <meta property="og:type" content="article">
-<meta property="og:title" content="LearningBlog">
+    <meta name="description" content="今天终于搭好了自己的第一个博客，记录一下搭建过程和踩到的坑，方便以后回看。 用了什么 框架: Hexo 主题: NexT 托管: GitHub Pages 编辑器: VS Code  搭建步骤 安装 Node.js，自带 npm 全局安装 Hexo: npm install -g hexo-cli 初始化博客目录: hexo init 安装依赖: npm install 本地预览: hexo se">
+<meta property="og:type" content="article">
+<meta property="og:title" content="我的第一篇博客">
 <meta property="og:url" content="http://example.com/post/myfirstBlog">
 <meta property="og:site_name" content="LearningBlog">
+<meta property="og:description" content="今天终于搭好了自己的第一个博客，记录一下搭建过程和踩到的坑，方便以后回看。 用了什么 框架: Hexo 主题: NexT 托管: GitHub Pages 编辑器: VS Code  搭建步骤 安装 Node.js，自带 npm 全局安装 Hexo: npm install -g hexo-cli 初始化博客目录: hexo init 安装依赖: npm install 本地预览: hexo se">
 <meta property="og:locale" content="en_US">
-<meta property="article:published_time" content="2026-11-28T14:02:35.753Z">
-<meta property="article:modified_time" content="2026-11-28T14:02:35.753Z">
+<meta property="article:published_time" content="2026-11-25T16:00:00.000Z">
+<meta property="article:modified_time" content="2026-11-28T14:15:01.786Z">
 <meta property="article:author" content="Zhang haonan">
+<meta property="article:tag" content="博客">
+<meta property="article:tag" content="搭建记录">
 <meta name="twitter:card" content="summary">
 
 
 <link rel="canonical" href="http://example.com/post/myfirstBlog.html">
 
 
-<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/post/myfirstBlog","path":"post/myfirstBlog.html","title":""}</script>
+<script class="next-config" data-name="page" type="application/json">{"sidebar":"","isHome":false,"isPost":true,"lang":"en","comments":true,"permalink":"http://example.com/post/myfirstBlog","path":"post/myfirstBlog.html","title":"我的第一篇博客"}</script>
 
 <script class="next-config" data-name="calendar" type="application/json">""</script>
-<title> | LearningBlog</title>
+<title>我的第一篇博客 | LearningBlog</title>
   
 
 
@@ -107,7 +111,7 @@
   
   <aside class="sidebar">
 
-    <div class="sidebar-inner sidebar-overview-active">
+    <div class="sidebar-inner sidebar-nav-active sidebar-toc-active">
       <ul class="sidebar-nav">
         <li class="sidebar-nav-toc">
           Table of Contents
@@ -120,6 +124,7 @@
       <div class="sidebar-panel-container">
         <!--noindex-->
         <div class="post-toc-wrap sidebar-panel">
+            <div class="post-toc animated"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#%E7%94%A8%E4%BA%86%E4%BB%80%E4%B9%88"><span class="nav-number">1.</span> <span class="nav-text">用了什么</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E6%90%AD%E5%BB%BA%E6%AD%A5%E9%AA%A4"><span class="nav-number">2.</span> <span class="nav-text">搭建步骤</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#%E8%B8%A9%E8%BF%87%E7%9A%84%E5%9D%91"><span class="nav-number">3.</span> <span class="nav-text">踩过的坑</span></a></li></ol></div>
         </div>
         <!--/noindex-->
 
@@ -138,8 +143,12 @@
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
+      <div class="site-state-item site-state-categories">
+        <span class="site-state-item-count">1</span>
+        <span class="site-state-item-name">categories</span>
+      </div>
       <div class="site-state-item site-state-tags">
-        <span class="site-state-item-count">2</span>
+        <span class="site-state-item-count">4</span>
         <span class="site-state-item-name">tags</span>
       </div>
   </nav>
@@ -179,12 +188,12 @@
     </span>
 
     <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content=" | LearningBlog">
+      <meta itemprop="name" content="我的第一篇博客 | LearningBlog">
       <meta itemprop="description" content="">
     </span>
       <header class="post-header">
         <h1 class="post-title" itemprop="name headline">
-          
+          我的第一篇博客
         </h1>
 
         <div class="post-meta-container">
@@ -195,7 +204,23 @@
       </span>
       <span class="post-meta-item-text">Posted on</span>
 
-      <time title="Created: 2026-11-28 22:02:35" itemprop="dateCreated datePublished" datetime="2026-11-28T22:02:35+08:00">2026-11-28</time>
+      <time title="Created: 2026-11-26 00:00:00" itemprop="dateCreated datePublished" datetime="2026-11-26T00:00:00+08:00">2026-11-26</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2026-11-28 22:15:01" itemprop="dateModified" datetime="2026-11-28T22:15:01+08:00">2026-11-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-folder"></i>
+      </span>
+      <span class="post-meta-item-text">In</span>
+        <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+          <a href="/categories/%E6%8A%80%E6%9C%AF/" itemprop="url" rel="index"><span itemprop="name">技术</span></a>
+        </span>
     </span>
 
   
@@ -207,7 +232,24 @@
     
     
     
-    <div class="post-body" itemprop="articleBody">
+    <div class="post-body" itemprop="articleBody"><p>今天终于搭好了自己的第一个博客，记录一下搭建过程和踩到的坑，方便以后回看。</p>
+<h2 id="用了什么"><a href="#用了什么" class="headerlink" title="用了什么"></a>用了什么</h2><ul>
+<li>框架: Hexo</li>
+<li>主题: NexT</li>
+<li>托管: GitHub Pages</li>
+<li>编辑器: VS Code</li>
+</ul>
+<h2 id="搭建步骤"><a href="#搭建步骤" class="headerlink" title="搭建步骤"></a>搭建步骤</h2><ol>
+<li>安装 Node.js，自带 npm</li>
+<li>全局安装 Hexo: <code>npm install -g hexo-cli</code></li>
+<li>初始化博客目录: <code>hexo init</code></li>
+<li>安装依赖: <code>npm install</code></li>
+<li>本地预览: <code>hexo server</code></li>
+<li>部署到 GitHub Pages: <code>hexo deploy</code></li>
+</ol>
+<h2 id="踩过的坑"><a href="#踩过的坑" class="headerlink" title="踩过的坑"></a>踩过的坑</h2><p>在配置 front-matter 的时候，YAML 语法的格式要求非常严格。特别是列表项 <code>-</code> 后面必须加一个空格，否则会导致整个文件解析失败，文章莫名其妙地消失。</p>
+<hr>
+
     </div>
 
     
@@ -215,16 +257,20 @@
     
 
     <footer class="post-footer">
+          <div class="post-tags">
+              <a href="/tags/%E5%8D%9A%E5%AE%A2/" rel="tag"># 博客</a>
+              <a href="/tags/%E6%90%AD%E5%BB%BA%E8%AE%B0%E5%BD%95/" rel="tag"># 搭建记录</a>
+          </div>
 
         
 
           <div class="post-nav">
             <div class="post-nav-item">
-                <a href="/post/report" rel="prev" title="典型灾害事故应急分析：江苏响水&quot;3·21&quot;特别">
-                  <i class="fa fa-angle-left"></i> 典型灾害事故应急分析：江苏响水"3·21"特别
-                </a>
             </div>
             <div class="post-nav-item">
+                <a href="/post/report" rel="next" title="典型灾害事故应急分析：江苏响水&quot;3·21&quot;特别">
+                  典型灾害事故应急分析：江苏响水"3·21"特别 <i class="fa fa-angle-right"></i>
+                </a>
             </div>
           </div>
     </footer>
